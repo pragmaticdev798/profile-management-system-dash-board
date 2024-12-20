@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+    <style>
+      body.dark-theme {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      .sidebar.dark-theme {
+        background-color: #1e1e1e;
+      }
+      .sidebar-link.dark-theme {
+        color: #ffffff;
+      }
+      td.dark-theme, th.dark-theme {
+        color: #ffffff;
+        background-color: #2e2e2e;
+      }
+      #theme-toggle {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #0075ff;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      #theme-toggle.dark-theme {
+        background-color: #1e90ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <h1>Loading<span>....</span></h1>
+    </div>
+    <div class="page-content index-page">
+      <div class="sidebar">
+        <div class="brand">
+          <i class="fa-solid fa-xmark xmark"></i>
+          <h3 class="brand-name">sharma</h3>
+        </div>
+        <button id="theme-toggle">Toggle Dark Theme</button>
+        <ul>
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/settings.html" class="sidebar-link">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Profile.html" class="sidebar-link">
+              <i class="fa-regular fa-user fa-fw"></i><span>Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Projects.html" class="sidebar-link">
+              <i class="fa-solid fa-diagram-project fa-fw"></i
+              ><span>Projects</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Courses.html" class="sidebar-link">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i
+              ><span>Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Friends.html" class="sidebar-link">
+              <i class="fa-regular fa-circle-user fa-fw"></i
+              ><span>Friends</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Files.html" class="sidebar-link">
+              <i class="fa-regular fa-file fa-fw"></i> <span>Files</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Plans.html" class="sidebar-link">
+              <i class="fa-regular fa-credit-card fa-fw"></i><span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <main>
+        <div class="header">
+          <i class="fa-solid fa-bars bar-item"></i>
+          <div class="search">
+            <input type="search" placeholder="Type A Keyword" />
+          </div>
+
+          <div class="profile">
+            <span class="bell"><i class="fa-regular fa-bell fa-lg"></i></span>
+
+            <img src="./images/avatar.png" alt="No Image" />
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="title">
+            <h1>Dashboard</h1>
+          </div>
+          <div class="main-content-boxes">
+            <div class="box first-box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Welcome</h2>
+                  <p>sharma</p>
+                </div>
+                <div class="box-image">
+                  <img src="./images/welcome.png" alt="No image" />
+                </div>
+                <img src="./images/avatar.png" alt="No image" class="avatar" />
+              </div>
+              <div class="box-section2">
+                <ul>
+                  <li>
+                    <span>Sharma Sharma</span>
+                    <p>Developer</p>
+                  </li>
+                  <li>
+                    <span>80</span>
+                    <p>Projects</p>
+                  </li>
+                  <li>
+                    <span>₹8500</span>
+                    <p>Earned</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="./pages/Profile.html">Profile </a>
+            </div>
+
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Quick Draft</h2>
+                  <p>Write A Draft For Your Ideas</p>
+                </div>
+              </div>
+              <form>
+                <input type="text" placeholder="Title" />
+                <textarea placeholder="Your Thoughts"></textarea>
+                <button type="submit">save</button>
+              </form>
+            </div>
+
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Yearly Targets</h2>
+                  <p>Targets Of The Year</p>
+                </div>
+              </div>
+              <div class="third-box-section2">
+                <div class="third-box-section2-details">
+                  <div class="icon">
+                    <i class="fa-solid fa-dollar-sign fa-lg"></i>
+                  </div>
+                  <div class="third-box-info">
+                    <ul>
+                      <li>Money</li>
+                      <li>₹20.000</li>
+                      <li>
+                        <span><span class="tipTop">80%</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="third-box-section2-details">
+                  <div class="icon">
+                    <i class="fa-solid fa-code fa-lg"></i>
+                  </div>
+                  <div class="third-box-info">
+                    <ul>
+                      <li>Projects</li>
+                      <li>24</li>
+                      <li>
+                        <span><span class="tipTop">55%</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="third-box-section2-details">
+                  <div class="icon">
+                    <i class="fa-solid fa-user fa-lg"></i>
+                  </div>
+                  <div class="third-box-info">
+                    <ul>
+                      <li>Team</li>
+                      <li>12</li>
+                      <li>
+                        <span><span class="tipTop">75%</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Tickets Statistics</h2>
+                  <p>Everything About Support Tickets</p>
+                </div>
+              </div>
+              <div class="fourth-box-section2">
+                <div class="small-box">
+                  <i class="fa-regular fa-rectangle-list fa-2x mb-10"></i>
+                  <span>2500</span>
+                  <p>Total</p>
+                </div>
+
+                <div class="small-box">
+                  <i class="fa-solid fa-spinner fa-2x mb-10"></i>
+                  <span>500</span>
+                  <p>Pending</p>
+                </div>
+
+                <div class="small-box">
+                  <i class="fa-regular fa-circle-check fa-2x mb-10"></i>
+                  <span>1900</span>
+                  <p>Closed</p>
+                </div>
+
+                <div class="small-box">
+                  <i class="fa-regular fa-rectangle-xmark fa-2x mb-10"></i>
+                  <span>100</span>
+                  <p>Deleted</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Latest News</h2>
+                </div>
+              </div>
+              <div class="latest-news-section2">
+                <img src="./images/news-01.png" alt="" />
+                <div class="latest-news-section2-info">
+                  <h4>Created SASS Section</h4>
+                  <p>New SASS Examples & Tutorials</p>
+                </div>
+                <span>3 Days Ago</span>
+              </div>
+
+              <div class="latest-news-section2">
+                <img src="./images/news-02.png" alt="" />
+                <div class="latest-news-section2-info">
+                  <h4>Changed The Design</h4>
+                  <p>A Brand New Website Design</p>
+                </div>
+                <span>5 Days Ago</span>
+              </div>
+
+              <div class="latest-news-section2">
+                <img src="./images/news-03.png" alt="" />
+                <div class="latest-news-section2-info">
+                  <h4>Team Increased</h4>
+                  <p>3 Developers Joined The Team</p>
+                </div>
+                <span>7 Days Ago</span>
+              </div>
+
+              <div class="latest-news-section2">
+                <img src="./images/news-04.png" alt="" />
+                <div class="latest-news-section2-info">
+                  <h4>Added Payment Gateway</h4>
+                  <p>Many New Payment Gateways Added</p>
+                </div>
+                <span>9 Days Ago</span>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Latest Tasks</h2>
+                </div>
+              </div>
+              <div class="latest-tasks-section2">
+                <div class="latest-tasks-section2-info">
+                  <h4>Record One New Video</h4>
+                  <p>Record Python Create Exe Project</p>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+
+              <div class="latest-tasks-section2">
+                <div class="latest-tasks-section2-info">
+                  <h4>Write Article</h4>
+                  <p>Write Low Level vs High Level Languages</p>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+
+              <div class="latest-tasks-section2">
+                <div class="latest-tasks-section2-info">
+                  <h4>Finish Project</h4>
+                  <p>Publish Academy Programming Project</p>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+
+              <div class="latest-tasks-section2">
+                <div class="latest-tasks-section2-info">
+                  <h4>Finish Lesson</h4>
+                  <p>Finish Teaching Flex Box</p>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Top Search Items</h2>
+                </div>
+              </div>
+              <div class="top-search-items">
+                <div class="top-search-items-info">
+                  <p>Keyword</p>
+                  <p>Search Count</p>
+                </div>
+
+                <div class="top-search-items-info">
+                  <h4>Programming</h4>
+                  <span>220</span>
+                </div>
+                <div class="top-search-items-info">
+                  <h4>JavaScript</h4>
+                  <span>180</span>
+                </div>
+                <div class="top-search-items-info">
+                  <h4>PHP</h4>
+                  <span>160</span>
+                </div>
+                <div class="top-search-items-info">
+                  <h4>Code</h4>
+                  <span>145</span>
+                </div>
+                <div class="top-search-items-info">
+                  <h4>Design</h4>
+                  <span>110</span>
+                </div>
+                <div class="top-search-items-info">
+                  <h4>Logic</h4>
+                  <span>95</span>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Latest Uploads</h2>
+                </div>
+              </div>
+              <div class="latest-news-section2 latest-uploads">
+                <img
+                  src="./images/pdf.svg"
+                  alt=""
+                  class="latest-uploads-image"
+                />
+                <div class="latest-news-section2-info latest-uploads-info">
+                  <h4>my-file.pdf</h4>
+                  <p>sharma</p>
+                </div>
+                <span>2.9MB</span>
+              </div>
+
+              <div class="latest-news-section2 latest-uploads">
+                <img
+                  src="./images/avi.svg"
+                  alt=""
+                  class="latest-uploads-image"
+                />
+                <div class="latest-news-section2-info latest-uploads-info">
+                  <h4>My-Video-File.avi</h4>
+                  <p>Admin</p>
+                </div>
+                <span>4.9MB</span>
+              </div>
+
+              <div class="latest-news-section2 latest-uploads">
+                <img
+                  src="./images/psd.svg"
+                  alt=""
+                  class="latest-uploads-image"
+                />
+                <div class="latest-news-section2-info latest-uploads-info">
+                  <h4>My-Psd-File.psd</h4>
+                  <p>Ahmad</p>
+                </div>
+                <span>4.5MB</span>
+              </div>
+
+              <div class="latest-news-section2 latest-uploads">
+                <img
+                  src="./images/zip.svg"
+                  alt=""
+                  class="latest-uploads-image"
+                />
+                <div class="latest-news-section2-info latest-uploads-info">
+                  <h4>My-Zip-File.zip</h4>
+                  <p>User</p>
+                </div>
+                <span>8.9MB</span>
+              </div>
+
+              <div class="latest-news-section2 latest-uploads">
+                <img
+                  src="./images/dll.svg"
+                  alt=""
+                  class="latest-uploads-image"
+                />
+                <div class="latest-news-section2-info latest-uploads-info">
+                  <h4>My-DLL-File.dll</h4>
+                  <p>Admin</p>
+                </div>
+                <span>4.9MB</span>
+              </div>
+
+              <div class="latest-news-section2 latest-uploads">
+                <img
+                  src="./images/eps.svg"
+                  alt=""
+                  class="latest-uploads-image"
+                />
+                <div class="latest-news-section2-info latest-uploads-info">
+                  <h4>My-Eps-File.eps</h4>
+                  <p>Designer</p>
+                </div>
+                <span>8.9MB</span>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Last Project Progress</h2>
+                </div>
+              </div>
+              <div class="last-project-progress">
+                <div class="last-project-progress-info">
+                  <ul>
+                    <li><span></span> Got The Project</li>
+                    <li><span></span> Started The Project</li>
+                    <li><span></span> The Project About To Finish</li>
+                    <li><span></span> Test The Project</li>
+                    <li><span></span> Finish The Project & Get Money</li>
+                  </ul>
+                </div>
+                <img src="./images/project.png" alt="" />
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Reminders</h2>
+                </div>
+              </div>
+              <div class="reminders-section2">
+                <div class="reminders">
+                  <h4>Check My Tasks List</h4>
+                  <p>28/09/2022 - 12:00am</p>
+                </div>
+                <div class="reminders">
+                  <h4>Check My Projects</h4>
+                  <p>26/10/2022 - 12:00am</p>
+                </div>
+                <div class="reminders">
+                  <h4>Call All My Clients</h4>
+                  <p>05/11/2022 - 12:00am</p>
+                </div>
+                <div class="reminders">
+                  <h4>Finish The Development Workshop</h4>
+                  <p>20/12/2022 - 12:00am</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Latest Post</h2>
+                </div>
+              </div>
+              <div class="latest-post-section2">
+                <div class="latest-post-person-info">
+                  <img src="./images/avatar.png" alt="" />
+                  <ul>
+                    <li><h4>Sharma Sharma</h4></li>
+                    <li><p>About 3 Hours Ago</p></li>
+                  </ul>
+                </div>
+                <div class="post">
+                  <p>
+                    You Can Fool All Of The People Some Of The Time, And Some Of
+                    The People All Of The Time, But You Can't Fool All Of The
+                    People All Of The Time.
+                  </p>
+                </div>
+                <div class="latest-post-likes-comments">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-heart heart"></i><span>1.8K</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-comments"></i><span>500</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Social Media Stats</h2>
+                </div>
+              </div>
+              <div class="social-media-stats">
+                <div class="media">
+                  <div class="media-icon twitter">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                  </div>
+                  <ul>
+                    <li class="twitter">90K Followers</li>
+                    <li><a href="/#">Follow</a></li>
+                  </ul>
+                </div>
+
+                <div class="media">
+                  <div class="media-icon facebook">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i>
+                  </div>
+                  <ul>
+                    <li class="facebook">2M Like</li>
+                    <li><a href="/#">Like</a></li>
+                  </ul>
+                </div>
+
+                <div class="media">
+                  <div class="media-icon youtube">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                  </div>
+                  <ul>
+                    <li class="youtube">1M Subs</li>
+                    <li><a href="/#">Subscribe</a></li>
+                  </ul>
+                </div>
+
+                <div class="media">
+                  <div class="media-icon linkedin">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                  </div>
+                  <ul>
+                    <li class="linkedin">70K Followers</li>
+                    <li><a href="/#">Follow</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-box">
+          <div class="box-section1">
+            <div class="box-title">
+              <h2>Projects</h2>
+            </div>
+          </div>
+          <div class="projects-box-section2">
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Finish Date</td>
+                  <td>Client</td>
+                  <td>Price</td>
+                  <td>Team</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ministry Wikipedia</td>
+                  <td>10 May 2022</td>
+                  <td>Ministry</td>
+                  <td>₹5300</td>
+                  <td>
+                    <img src="./images/team-01.png" alt="" />
+                    <img src="./images/team-02.png" alt="" />
+                    <img src="./images/team-03.png" alt="" />
+                    <img src="./images/team-04.png" alt="" />
+                  </td>
+                  <td><a href="/#" class="pending">Pending</a></td>
+                </tr>
+                <tr>
+                  <td>sharma Shop</td>
+                  <td>12 Oct 2021</td>
+                  <td>sharma Company</td>
+                  <td>₹1500</td>
+                  <td>
+                    <img src="./images/team-01.png" alt="" />
+                    <img src="./images/team-02.png" alt="" />
+                    <img src="./images/team-03.png" alt="" />
+                  </td>
+                  <td><a href="/#" class="in-progress">In Progress</a></td>
+                </tr>
+                <tr>
+                  <td>Bouba App</td>
+                  <td>05 Sep 2021</td>
+                  <td>Bouba</td>
+                  <td>₹800</td>
+                  <td>
+                    <img src="./images/team-01.png" alt="" />
+                    <img src="./images/team-02.png" alt="" />
+                  </td>
+                  <td><a href="/#" class="completed">Completed</a></td>
+                </tr>
+                <tr>
+                  <td>Mahmoud Website</td>
+                  <td>22 May 2021</td>
+                  <td>Mahmoud</td>
+                  <td>₹600</td>
+                  <td>
+                    <img src="./images/team-01.png" alt="" />
+                    <img src="./images/team-02.png" alt="" />
+                  </td>
+                  <td><a href="/#" class="completed">Completed</a></td>
+                </tr>
+                <tr>
+                  <td>Sayed Website</td>
+                  <td>24 May 2021</td>
+                  <td>Sayed</td>
+                  <td>300</td>
+                  <td>
+                    <img src="./images/team-01.png" alt="" />
+                    <img src="./images/team-02.png" alt="" />
+                  </td>
+                  <td><a href="/#" class="rejected">Rejected</a></td>
+                </tr>
+                <tr>
+                  <td>Arena Application</td>
+                  <td>01 Mar 2021</td>
+                  <td>Arena Company</td>
+                  <td>₹2600</td>
+                  <td>
+                    <img src="./images/team-01.png" alt="" />
+                    <img src="./images/team-02.png" alt="" />
+                    <img src="./images/team-03.png" alt="" />
+                    <img src="./images/team-04.png" alt="" />
+                  </td>
+                  <td><a href="/#" class="completed">Completed</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/script.js"></script>
+    <script>
+      const themeToggle = document.getElementById('theme-toggle');
+      themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        document.querySelector('.sidebar').classList.toggle('dark-theme');
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+          link.classList.toggle('dark-theme');
+        });
+        document.querySelectorAll('td, th').forEach(cell => {
+          cell.classList.toggle('dark-theme');
+        });
+        themeToggle.classList.toggle('dark-theme');
+      });
+    </script>
+  </body>
+</html>
